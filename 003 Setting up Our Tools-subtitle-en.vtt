@@ -1,0 +1,274 @@
+﻿WEBVTT
+
+1
+00:00:01.461 --> 00:00:03.760
+<v Instructor>Before writing a single line of code,</v>
+
+2
+00:00:03.760 --> 00:00:06.603
+of course we need to have our tools set up
+
+3
+00:00:06.603 --> 00:00:09.505
+and the tools we need are a code editor,
+
+4
+00:00:09.505 --> 00:00:12.024
+as well as a browser to test the project
+
+5
+00:00:12.024 --> 00:00:13.941
+that we're gonna build.
+
+6
+00:00:14.896 --> 00:00:16.487
+I bought the code editor.
+
+7
+00:00:16.487 --> 00:00:19.214
+Since you signed up for an advanced (mumbles) course,
+
+8
+00:00:19.214 --> 00:00:20.700
+I'm absolutely sure that you have already
+
+9
+00:00:20.700 --> 00:00:24.029
+some code editor set up for yourself.
+
+10
+00:00:24.029 --> 00:00:26.857
+I am currently using Visual Studio Code
+
+11
+00:00:26.857 --> 00:00:29.350
+and so that's the code editor that I'm going to use
+
+12
+00:00:29.350 --> 00:00:31.009
+throughout this course.
+
+13
+00:00:31.009 --> 00:00:34.679
+Visual Studio Code is a relatively new code editor
+
+14
+00:00:34.679 --> 00:00:36.962
+and in my opinion, it's amazing.
+
+15
+00:00:36.962 --> 00:00:40.419
+It's a really great, great code editor.
+
+16
+00:00:40.419 --> 00:00:42.608
+It has this excellent auto-complete feature
+
+17
+00:00:42.608 --> 00:00:45.070
+which they call IntelliSense.
+
+18
+00:00:45.070 --> 00:00:48.340
+Is has built-in Git supports, so if you are using Git,
+
+19
+00:00:48.340 --> 00:00:50.991
+you can use it right in the code editor.
+
+20
+00:00:50.991 --> 00:00:53.841
+And it also works extremely well with extensions.
+
+21
+00:00:53.841 --> 00:00:57.266
+It has a lot of great extensions and they work a lot better,
+
+22
+00:00:57.266 --> 00:00:59.930
+a lot smoother than in other code editors
+
+23
+00:00:59.930 --> 00:01:01.450
+that I have tried out.
+
+24
+00:01:01.450 --> 00:01:03.333
+So as you can maybe hear, I'm really in love
+
+25
+00:01:03.333 --> 00:01:05.427
+with this code editor and it's the best one
+
+26
+00:01:05.427 --> 00:01:07.176
+I've ever tried out.
+
+27
+00:01:07.176 --> 00:01:10.052
+But as I was saying, you probably have a code editor
+
+28
+00:01:10.052 --> 00:01:11.806
+already set up for yourself.
+
+29
+00:01:11.806 --> 00:01:13.251
+And if you're really happy with that,
+
+30
+00:01:13.251 --> 00:01:15.940
+then you should absolutely continue using that.
+
+31
+00:01:15.940 --> 00:01:18.842
+So no matter if you're using Atom or Brackets
+
+32
+00:01:18.842 --> 00:01:21.906
+or Sublime or whatever text editor you're using,
+
+33
+00:01:21.906 --> 00:01:23.484
+it doesn't matter because the results
+
+34
+00:01:23.484 --> 00:01:25.458
+will always be the same.
+
+35
+00:01:25.458 --> 00:01:27.374
+So again, if you're happy with the editor
+
+36
+00:01:27.374 --> 00:01:28.610
+you're using right now,
+
+37
+00:01:28.610 --> 00:01:31.068
+you already have it really customized for yourself,
+
+38
+00:01:31.068 --> 00:01:33.056
+then just keep using that one.
+
+39
+00:01:33.056 --> 00:01:34.810
+But if you're not really happy
+
+40
+00:01:34.810 --> 00:01:36.417
+or if you want to try something new,
+
+41
+00:01:36.417 --> 00:01:39.452
+then I would encourage you to try Visual Studio Code.
+
+42
+00:01:39.452 --> 00:01:41.956
+It's a fantastic experience for developers.
+
+43
+00:01:41.956 --> 00:01:44.047
+If you want to know more about my setup,
+
+44
+00:01:44.047 --> 00:01:46.564
+like which theme I use and which extensions
+
+45
+00:01:46.564 --> 00:01:49.232
+I have installed and use on a daily basis,
+
+46
+00:01:49.232 --> 00:01:52.043
+then just head over to my blog and there you're gonna find
+
+47
+00:01:52.043 --> 00:01:54.136
+a post with my setup.
+
+48
+00:01:54.136 --> 00:01:55.979
+I will also put the link to this post
+
+49
+00:01:55.979 --> 00:01:58.650
+on my resources page very soon.
+
+50
+00:01:58.650 --> 00:02:01.213
+Now about the browser, I'm using Google Chrome
+
+51
+00:02:01.213 --> 00:02:04.201
+to test my webpages, and of course that's what I'm gonna do
+
+52
+00:02:04.201 --> 00:02:05.867
+in this course as well.
+
+53
+00:02:05.867 --> 00:02:08.136
+So, I encourage you to use Google Chrome as well,
+
+54
+00:02:08.136 --> 00:02:09.913
+if you're not already doing it.
+
+55
+00:02:09.913 --> 00:02:12.450
+Also, because it's the most used browser in the world,
+
+56
+00:02:12.450 --> 00:02:14.599
+so you really can't go wrong by using it
+
+57
+00:02:14.599 --> 00:02:17.340
+and also, you want to see how the web page
+
+58
+00:02:17.340 --> 00:02:21.069
+is going to look like exactly for the majority of the users,
+
+59
+00:02:21.069 --> 00:02:24.958
+since Google Chrome is the most used browser in the world.
+
+60
+00:02:24.958 --> 00:02:27.855
+So for the code editor, I'm using Visual Studio Code,
+
+61
+00:02:27.855 --> 00:02:30.450
+but you can use whatever editor you want,
+
+62
+00:02:30.450 --> 00:02:32.941
+and for the browser, you should use Google Chrome
+
+63
+00:02:32.941 --> 00:02:34.274
+so that we're on the same page.
+
+64
+00:02:34.274 --> 00:02:35.865
+Also we are using the (mumbles) tools
+
+65
+00:02:35.865 --> 00:02:38.840
+so that we are always looking at the same thing.`
+
+66
+00:02:38.840 --> 00:02:40.878
+All right, so I think we are all set up now
+
+67
+00:02:40.878 --> 00:02:44.296
+and we're ready to start with the project right now.
+
+68
+00:02:44.296 --> 00:02:48.463
+So hit play on that next video and see you in a second.
+

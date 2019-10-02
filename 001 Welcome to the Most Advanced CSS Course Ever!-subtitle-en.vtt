@@ -1,0 +1,370 @@
+﻿WEBVTT
+
+1
+00:00:02.570 --> 00:00:04.622
+- Hello, and welcome to the most advanced
+
+2
+00:00:04.622 --> 00:00:07.566
+and modern CSS course in the world.
+
+3
+00:00:07.566 --> 00:00:10.686
+I'm really excited to have you in this massive course,
+
+4
+00:00:10.686 --> 00:00:12.337
+and I promise you made the right choice
+
+5
+00:00:12.337 --> 00:00:14.661
+by joining me in this adventure.
+
+6
+00:00:14.661 --> 00:00:16.314
+Now, without further ado,
+
+7
+00:00:16.314 --> 00:00:17.997
+I want to give you a quick overview
+
+8
+00:00:17.997 --> 00:00:19.797
+of how the course is organized,
+
+9
+00:00:19.797 --> 00:00:22.037
+the projects that are included in the course,
+
+10
+00:00:22.037 --> 00:00:24.714
+and what exactly you are gonna learn.
+
+11
+00:00:24.714 --> 00:00:28.249
+So, the course contains a total of seven sections
+
+12
+00:00:28.249 --> 00:00:31.230
+with over 20 hours of content.
+
+13
+00:00:31.230 --> 00:00:32.740
+We start with Section Two,
+
+14
+00:00:32.740 --> 00:00:35.634
+where we're going to jump right into our first project
+
+15
+00:00:35.634 --> 00:00:38.285
+and start learning some advanced CSS.
+
+16
+00:00:38.285 --> 00:00:40.054
+So this is the Natours project
+
+17
+00:00:40.054 --> 00:00:42.370
+that we're going to start building in Section Two
+
+18
+00:00:42.370 --> 00:00:44.798
+all the way to the end of Section Six.
+
+19
+00:00:44.798 --> 00:00:47.809
+It's a huge landing page that I designed specifically
+
+20
+00:00:47.809 --> 00:00:50.366
+to teach you a lot of different new CSS
+
+21
+00:00:50.366 --> 00:00:52.757
+properties and techniques, animations,
+
+22
+00:00:52.757 --> 00:00:55.936
+advanced responsive designs, CSS architecture,
+
+23
+00:00:55.936 --> 00:00:57.375
+and much more.
+
+24
+00:00:57.375 --> 00:00:59.503
+And you see that there are a lot of effects
+
+25
+00:00:59.503 --> 00:01:02.041
+going on here on this page.
+
+26
+00:01:02.041 --> 00:01:05.038
+Now, in Section Three, we take a detailed look
+
+27
+00:01:05.038 --> 00:01:07.760
+at how CSS actually works behind the scenes.
+
+28
+00:01:07.760 --> 00:01:11.347
+And we're also going to talk a bit about CSS architecture
+
+29
+00:01:11.347 --> 00:01:13.461
+so that you can gain the kind of knowledge
+
+30
+00:01:13.461 --> 00:01:16.866
+that many CSS developers out there don't have.
+
+31
+00:01:16.866 --> 00:01:19.150
+Next up, I will introduce you to Sass
+
+32
+00:01:19.150 --> 00:01:21.131
+and to the NPM ecosystem,
+
+33
+00:01:21.131 --> 00:01:23.652
+which will give you a whole new set of tools,
+
+34
+00:01:23.652 --> 00:01:26.842
+allowing you to write and compile Sass code.
+
+35
+00:01:26.842 --> 00:01:30.055
+Then, Section Five is the biggest part of the course.
+
+36
+00:01:30.055 --> 00:01:31.971
+And this is where we'll continue building
+
+37
+00:01:31.971 --> 00:01:34.047
+the Natours project that I showed you,
+
+38
+00:01:34.047 --> 00:01:35.294
+and where you will learn
+
+39
+00:01:35.294 --> 00:01:38.564
+countless new CSS properties and features.
+
+40
+00:01:38.564 --> 00:01:40.069
+After that, in Section Six,
+
+41
+00:01:40.069 --> 00:01:42.749
+we keep building the Natours project,
+
+42
+00:01:42.749 --> 00:01:46.913
+but now with a heavy focus on advanced responsive design.
+
+43
+00:01:46.913 --> 00:01:49.868
+In Section Seven, we then build a whole new project,
+
+44
+00:01:49.868 --> 00:01:52.749
+this time using the immense power of Flexbox.
+
+45
+00:01:52.749 --> 00:01:55.783
+So, I will introduce you to this amazing new technology
+
+46
+00:01:55.783 --> 00:01:57.449
+and then we build this entire
+
+47
+00:01:57.449 --> 00:02:00.005
+modern-looking project called trillo
+
+48
+00:02:00.005 --> 00:02:02.041
+using Flexbox and some other stuff
+
+49
+00:02:02.041 --> 00:02:04.334
+that I'm going to show you as well.
+
+50
+00:02:04.334 --> 00:02:06.605
+Finally, the last section is a bit similar
+
+51
+00:02:06.605 --> 00:02:08.077
+to the Flexbox section,
+
+52
+00:02:08.077 --> 00:02:09.573
+but this time, you're going to learn the
+
+53
+00:02:09.573 --> 00:02:13.235
+even more cutting-edge CSS grid technology.
+
+54
+00:02:13.235 --> 00:02:15.618
+However, this section is not available right now
+
+55
+00:02:15.618 --> 00:02:17.055
+as a launched course,
+
+56
+00:02:17.055 --> 00:02:20.001
+but it will be added a bit later in 2017.
+
+57
+00:02:20.001 --> 00:02:20.834
+So don't worry.
+
+58
+00:02:20.834 --> 00:02:23.536
+By the time you master everything there is in the course,
+
+59
+00:02:23.536 --> 00:02:26.665
+I will be adding the CSS grid section.
+
+60
+00:02:26.665 --> 00:02:30.252
+So that is a broad overview of the course structure.
+
+61
+00:02:30.252 --> 00:02:31.534
+Now, in all the videos,
+
+62
+00:02:31.534 --> 00:02:34.917
+I always do my best to explain every single details
+
+63
+00:02:34.917 --> 00:02:36.589
+of the techniques that I'm using
+
+64
+00:02:36.589 --> 00:02:38.962
+or the technologies that I'm introducing
+
+65
+00:02:38.962 --> 00:02:41.494
+but sometimes you might still have a question
+
+66
+00:02:41.494 --> 00:02:43.997
+about any of the topics that you're learning,
+
+67
+00:02:43.997 --> 00:02:45.294
+and that's fantastic
+
+68
+00:02:45.294 --> 00:02:47.895
+because asking questions is great.
+
+69
+00:02:47.895 --> 00:02:50.883
+Or maybe you just run into a problem with your code
+
+70
+00:02:50.883 --> 00:02:52.466
+and need help fixing it
+
+71
+00:02:52.466 --> 00:02:55.297
+because it doesn't really work the way it should.
+
+72
+00:02:55.297 --> 00:02:58.049
+Either way, you will always get support and help
+
+73
+00:02:58.049 --> 00:03:00.329
+in the Udemy Q&amp;A section.
+
+74
+00:03:00.329 --> 00:03:02.566
+So at the bottom of the video that you're watching,
+
+75
+00:03:02.566 --> 00:03:06.115
+you will find a question section for that specific video.
+
+76
+00:03:06.115 --> 00:03:07.625
+And whenever you have a question,
+
+77
+00:03:07.625 --> 00:03:09.484
+you can check out if other students
+
+78
+00:03:09.484 --> 00:03:11.365
+may have asked the same question.
+
+79
+00:03:11.365 --> 00:03:14.375
+And if not, you can just post your own question.
+
+80
+00:03:14.375 --> 00:03:16.300
+And you will then get friendly support
+
+81
+00:03:16.300 --> 00:03:20.004
+so that you're back to writing code as fast as possible.
+
+82
+00:03:20.004 --> 00:03:23.116
+And now just to finish, I designed this course for you.
+
+83
+00:03:23.116 --> 00:03:24.866
+To bring your CSS skills
+
+84
+00:03:24.866 --> 00:03:27.806
+to the most modern and advanced level
+
+85
+00:03:27.806 --> 00:03:29.974
+and to give you the tools so that you can build
+
+86
+00:03:29.974 --> 00:03:34.141
+any webpage or app that you can imagine from the ground up.
+
+87
+00:03:34.167 --> 00:03:35.621
+And so we cover everything
+
+88
+00:03:35.621 --> 00:03:37.848
+that all the other courses don't cover
+
+89
+00:03:37.848 --> 00:03:39.819
+so that you can become the confident
+
+90
+00:03:39.819 --> 00:03:42.385
+front-end web developer that you want to be.
+
+91
+00:03:42.385 --> 00:03:44.623
+That is my main goal for this course.
+
+92
+00:03:44.623 --> 00:03:48.790
+And with that being said, let's finally get started with it.
+

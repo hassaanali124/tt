@@ -1,0 +1,1606 @@
+﻿WEBVTT
+
+1
+00:00:01.092 --> 00:00:02.834
+<v Instructor>In this lecture, we are gonna continue</v>
+
+2
+00:00:02.834 --> 00:00:05.810
+building the header section of our project
+
+3
+00:00:05.810 --> 00:00:09.540
+using some CSS properties that you're already familiar with.
+
+4
+00:00:09.540 --> 00:00:10.873
+And you're also gonna learn the easiest
+
+5
+00:00:10.873 --> 00:00:15.040
+way to center anything in CSS with transform, top, and left.
+
+6
+00:00:16.041 --> 00:00:18.422
+Which is something really important.
+
+7
+00:00:18.422 --> 00:00:21.502
+So, this is where we left after the last lecture.
+
+8
+00:00:21.502 --> 00:00:24.570
+So let's now take a look at the final product.
+
+9
+00:00:24.570 --> 00:00:26.404
+And so what we're gonna do in this lecture,
+
+10
+00:00:26.404 --> 00:00:28.815
+is to just add this small logo here.
+
+11
+00:00:28.815 --> 00:00:32.760
+And then, we're also going to add this heading here.
+
+12
+00:00:32.760 --> 00:00:34.558
+So this is the plan for this lecture
+
+13
+00:00:34.558 --> 00:00:37.267
+And let's start with the image.
+
+14
+00:00:37.267 --> 00:00:38.826
+So first off, in the HTML,
+
+15
+00:00:38.826 --> 00:00:41.433
+we actually have to add that image.
+
+16
+00:00:41.433 --> 00:00:43.438
+So let's remove the text here.
+
+17
+00:00:43.438 --> 00:00:47.045
+And what I'm gonna do now is to add first a DIV,
+
+18
+00:00:47.045 --> 00:00:50.437
+and then inside that DIV is where I'm gonna put an image.
+
+19
+00:00:50.437 --> 00:00:52.917
+Because the image is actually an inline element,
+
+20
+00:00:52.917 --> 00:00:55.039
+and so I think it's a better practice
+
+21
+00:00:55.039 --> 00:00:56.936
+to first have a small container
+
+22
+00:00:56.936 --> 00:00:58.539
+where this image is inside,
+
+23
+00:00:58.539 --> 00:01:00.325
+and then position that container
+
+24
+00:01:00.325 --> 00:01:03.457
+to where we want the image and the container to be.
+
+25
+00:01:03.457 --> 00:01:07.624
+So first, I'm writing a DIV with a class of logo box.
+
+26
+00:01:11.702 --> 00:01:15.319
+And then in here, I'm going to put the image.
+
+27
+00:01:15.319 --> 00:01:18.288
+So we go into the image folder, so IMG,
+
+28
+00:01:18.288 --> 00:01:19.675
+and then from here,
+
+29
+00:01:19.675 --> 00:01:23.484
+the logo that we want is called logo white.
+
+30
+00:01:23.484 --> 00:01:25.244
+So it's this one here.
+
+31
+00:01:25.244 --> 00:01:27.661
+So, IMG, and then logo white.
+
+32
+00:01:30.780 --> 00:01:34.452
+And then we also give it an alt attribute.
+
+33
+00:01:34.452 --> 00:01:36.415
+And remember that the alt attribute is
+
+34
+00:01:36.415 --> 00:01:39.349
+to describe the image for SEO,
+
+35
+00:01:39.349 --> 00:01:41.024
+so Search Engine Optimization,
+
+36
+00:01:41.024 --> 00:01:44.769
+but also for the case that somehow the image fails to load,
+
+37
+00:01:44.769 --> 00:01:48.360
+then on the website instead of the image appears this text,
+
+38
+00:01:48.360 --> 00:01:50.076
+so that users can still see
+
+39
+00:01:50.076 --> 00:01:52.927
+what the image that isn't there is all about.
+
+40
+00:01:52.927 --> 00:01:55.575
+So I'm just gonna put here logo.
+
+41
+00:01:55.575 --> 00:01:59.703
+I'm also going to add a class and call it just logo.
+
+42
+00:01:59.703 --> 00:02:03.126
+So we have a logo box and then logo.
+
+43
+00:02:03.126 --> 00:02:04.959
+So let's now style it.
+
+44
+00:02:07.767 --> 00:02:09.600
+So first the logo box.
+
+45
+00:02:12.313 --> 00:02:14.730
+And then the logo after that.
+
+46
+00:02:16.955 --> 00:02:20.183
+And remember where we want to put the image.
+
+47
+00:02:20.183 --> 00:02:22.328
+So it's here in this corner.
+
+48
+00:02:22.328 --> 00:02:24.888
+And so one good way of doing this
+
+49
+00:02:24.888 --> 00:02:27.089
+is to use absolute positioning.
+
+50
+00:02:27.089 --> 00:02:28.795
+And I'm once again sure that you already
+
+51
+00:02:28.795 --> 00:02:31.286
+know how absolute positioning works,
+
+52
+00:02:31.286 --> 00:02:33.407
+but in the next section there is a big lecture
+
+53
+00:02:33.407 --> 00:02:34.974
+which talks about the difference between
+
+54
+00:02:34.974 --> 00:02:37.152
+absolute and relative positioning,
+
+55
+00:02:37.152 --> 00:02:39.415
+and the normal flow and floats,
+
+56
+00:02:39.415 --> 00:02:40.849
+and all of that stuff,
+
+57
+00:02:40.849 --> 00:02:42.280
+so that you really understand how
+
+58
+00:02:42.280 --> 00:02:44.218
+all of this works behind the scenes.
+
+59
+00:02:44.218 --> 00:02:45.051
+Okay.
+
+60
+00:02:45.051 --> 00:02:49.561
+But for now, let's just simply use the position absolute,
+
+61
+00:02:49.561 --> 00:02:51.496
+like you already know how to do.
+
+62
+00:02:51.496 --> 00:02:55.238
+And we can then use top, bottom, left, and right properties
+
+63
+00:02:55.238 --> 00:02:58.352
+to put the image exactly where we want it to be.
+
+64
+00:02:58.352 --> 00:03:02.927
+So, let's say we want the top to be 40 pixels,
+
+65
+00:03:02.927 --> 00:03:06.175
+and the left to be 40 pixels.
+
+66
+00:03:06.175 --> 00:03:08.657
+Now, where does this measurement actually start?
+
+67
+00:03:08.657 --> 00:03:13.163
+So, from where, counting from where, is these 40 pixels?
+
+68
+00:03:13.163 --> 00:03:15.389
+And also these 40 pixels.
+
+69
+00:03:15.389 --> 00:03:17.606
+There has to be some kind of reference, right?
+
+70
+00:03:17.606 --> 00:03:20.663
+So, the place from which we start to count 40 pixels
+
+71
+00:03:20.663 --> 00:03:24.022
+to the left, and 40 pixels from the top.
+
+72
+00:03:24.022 --> 00:03:24.855
+Right?
+
+73
+00:03:24.855 --> 00:03:27.316
+And that reference is a parent element,
+
+74
+00:03:27.316 --> 00:03:30.295
+which has its position set to relative.
+
+75
+00:03:30.295 --> 00:03:32.125
+And so we should also do that.
+
+76
+00:03:32.125 --> 00:03:34.909
+And remember that the header is the parent element, right?
+
+77
+00:03:34.909 --> 00:03:38.027
+So, logo box and the parent is the header.
+
+78
+00:03:38.027 --> 00:03:39.814
+And so we should go to header
+
+79
+00:03:39.814 --> 00:03:42.295
+and set its position to relative.
+
+80
+00:03:42.295 --> 00:03:44.286
+Position relative.
+
+81
+00:03:44.286 --> 00:03:47.411
+So now this is the origin, so the reference,
+
+82
+00:03:47.411 --> 00:03:50.379
+from which top and left start to count.
+
+83
+00:03:50.379 --> 00:03:51.575
+Okay.
+
+84
+00:03:51.575 --> 00:03:54.485
+Now just before we check if this already looks good,
+
+85
+00:03:54.485 --> 00:03:58.649
+let's just specify the size of the image itself.
+
+86
+00:03:58.649 --> 00:04:00.982
+So we say height, 35 pixels.
+
+87
+00:04:02.914 --> 00:04:04.058
+That will be okay.
+
+88
+00:04:04.058 --> 00:04:06.249
+And then the width we'll scale accordingly.
+
+89
+00:04:06.249 --> 00:04:07.837
+So we don't even have to specify it.
+
+90
+00:04:07.837 --> 00:04:09.357
+All we do is to specify the height,
+
+91
+00:04:09.357 --> 00:04:11.311
+and the width will be automatically
+
+92
+00:04:11.311 --> 00:04:13.194
+figured out by the browser.
+
+93
+00:04:13.194 --> 00:04:14.961
+We could instead also set the width
+
+94
+00:04:14.961 --> 00:04:17.143
+and then the height would be figured out by the browser.
+
+95
+00:04:17.143 --> 00:04:18.921
+But I prefer to do it like this.
+
+96
+00:04:18.921 --> 00:04:23.005
+I always prefer to control the height of the elements.
+
+97
+00:04:23.005 --> 00:04:25.850
+So let's now take a look.
+
+98
+00:04:25.850 --> 00:04:27.255
+And indeed, there it is.
+
+99
+00:04:27.255 --> 00:04:29.701
+Okay. So this part is completed.
+
+100
+00:04:29.701 --> 00:04:32.773
+Let's now take care of this primary heading
+
+101
+00:04:32.773 --> 00:04:33.802
+that we have here.
+
+102
+00:04:33.802 --> 00:04:35.802
+So this one here, right.
+
+103
+00:04:37.753 --> 00:04:39.329
+So back to the HTML,
+
+104
+00:04:39.329 --> 00:04:44.257
+right after this logo box we will have our primary heading.
+
+105
+00:04:44.257 --> 00:04:47.487
+So I'm going to use the H one element,
+
+106
+00:04:47.487 --> 00:04:49.820
+and call it heading primary.
+
+107
+00:04:55.052 --> 00:04:55.885
+Alright.
+
+108
+00:04:55.885 --> 00:04:57.759
+Now, let's actually go back
+
+109
+00:04:57.759 --> 00:04:59.994
+to take a look at how we want this.
+
+110
+00:04:59.994 --> 00:05:02.732
+So we want this basically to have two parts.
+
+111
+00:05:02.732 --> 00:05:06.239
+So we have this entire text here, but this is all the H one.
+
+112
+00:05:06.239 --> 00:05:08.500
+Remember that the H one is the single most important
+
+113
+00:05:08.500 --> 00:05:10.446
+heading on the page,
+
+114
+00:05:10.446 --> 00:05:14.496
+which is important for Google or for any other search engine
+
+115
+00:05:14.496 --> 00:05:16.977
+to figure out what our webpage is all about.
+
+116
+00:05:16.977 --> 00:05:18.577
+And so it's important that we basically
+
+117
+00:05:18.577 --> 00:05:21.138
+put the title of our webpage in there.
+
+118
+00:05:21.138 --> 00:05:24.325
+Now we could only just put outdoors in there,
+
+119
+00:05:24.325 --> 00:05:26.875
+so make this the H one, and then for example,
+
+120
+00:05:26.875 --> 00:05:29.482
+make an H two here for the secondary header,
+
+121
+00:05:29.482 --> 00:05:32.339
+and put this is where life happens in there.
+
+122
+00:05:32.339 --> 00:05:33.263
+But that's not what we want,
+
+123
+00:05:33.263 --> 00:05:35.577
+because we don't want our primary text
+
+124
+00:05:35.577 --> 00:05:38.693
+or title of the website to say just outdoors.
+
+125
+00:05:38.693 --> 00:05:40.928
+We want all of this text.
+
+126
+00:05:40.928 --> 00:05:43.807
+And so we must somehow divide this text.
+
+127
+00:05:43.807 --> 00:05:45.583
+So, what are we going to do?
+
+128
+00:05:45.583 --> 00:05:47.502
+We are going to use this span element.
+
+129
+00:05:47.502 --> 00:05:49.544
+And this span element is perfect for this
+
+130
+00:05:49.544 --> 00:05:51.675
+because remember that a span
+
+131
+00:05:51.675 --> 00:05:54.489
+is simply to style some text different.
+
+132
+00:05:54.489 --> 00:05:56.817
+And so we can just put two span elements in here,
+
+133
+00:05:56.817 --> 00:05:57.803
+one for each part.
+
+134
+00:05:57.803 --> 00:06:00.337
+One for the top, and one for the bottom.
+
+135
+00:06:00.337 --> 00:06:03.587
+So span, class, heading, primary, main.
+
+136
+00:06:08.569 --> 00:06:10.686
+And then the same
+
+137
+00:06:10.686 --> 00:06:11.519
+for
+
+138
+00:06:13.176 --> 00:06:14.769
+the part on the bottom.
+
+139
+00:06:14.769 --> 00:06:17.040
+Let's call it sub.
+
+140
+00:06:17.040 --> 00:06:20.392
+So the first one says outdoors.
+
+141
+00:06:20.392 --> 00:06:23.475
+And down here, is where life happens.
+
+142
+00:06:25.611 --> 00:06:28.024
+So that's basically the slogan of the company.
+
+143
+00:06:28.024 --> 00:06:31.334
+And with that, we're good to go, and to format this text.
+
+144
+00:06:31.334 --> 00:06:35.084
+So, heading, primary, let me already copy it.
+
+145
+00:06:41.398 --> 00:06:42.481
+And then also
+
+146
+00:06:44.639 --> 00:06:45.472
+main,
+
+147
+00:06:47.109 --> 00:06:49.276
+and then also for the sub.
+
+148
+00:06:51.457 --> 00:06:55.355
+So the first thing that we want is the color to be white.
+
+149
+00:06:55.355 --> 00:06:58.672
+And that is just this fff code.
+
+150
+00:06:58.672 --> 00:07:02.782
+So in RGB fff is basically the same as saying this one here.
+
+151
+00:07:02.782 --> 00:07:03.615
+Okay.
+
+152
+00:07:03.615 --> 00:07:06.654
+And you see that both of them are the complete white.
+
+153
+00:07:06.654 --> 00:07:10.007
+So the presence of all the colors at the same time.
+
+154
+00:07:10.007 --> 00:07:14.412
+So it's complete red, complete green, and complete blue.
+
+155
+00:07:14.412 --> 00:07:15.245
+Okay.
+
+156
+00:07:15.245 --> 00:07:16.573
+But this is enough.
+
+157
+00:07:16.573 --> 00:07:19.697
+Now another thing that we want is to text the uppercase,
+
+158
+00:07:19.697 --> 00:07:22.780
+so we say text, transform, uppercase.
+
+159
+00:07:24.774 --> 00:07:26.615
+And for now that should be enough.
+
+160
+00:07:26.615 --> 00:07:28.532
+Let's just take a look.
+
+161
+00:07:30.718 --> 00:07:32.148
+And alright.
+
+162
+00:07:32.148 --> 00:07:34.455
+So our text is already here, it's already white.
+
+163
+00:07:34.455 --> 00:07:36.470
+It's not quite where we want it to be,
+
+164
+00:07:36.470 --> 00:07:38.828
+but we're gonna take care of that later.
+
+165
+00:07:38.828 --> 00:07:40.157
+Next, what we want to do,
+
+166
+00:07:40.157 --> 00:07:42.464
+is to put this on top, and this below it.
+
+167
+00:07:42.464 --> 00:07:43.297
+Right?
+
+168
+00:07:43.297 --> 00:07:44.196
+So we want outdoors on top,
+
+169
+00:07:44.196 --> 00:07:46.220
+and then after that this part here.
+
+170
+00:07:46.220 --> 00:07:49.432
+Also this text should be bigger, and this one smaller.
+
+171
+00:07:49.432 --> 00:07:52.820
+And also, as you see, it has this huge spacing here.
+
+172
+00:07:52.820 --> 00:07:55.742
+So I did this to make it look really big,
+
+173
+00:07:55.742 --> 00:07:57.105
+to give it some space to breathe.
+
+174
+00:07:57.105 --> 00:07:59.297
+I think this looks like outdoors.
+
+175
+00:07:59.297 --> 00:08:01.745
+It looks great with all this spacing.
+
+176
+00:08:01.745 --> 00:08:03.987
+That's why I decided to go this way.
+
+177
+00:08:03.987 --> 00:08:06.584
+Let's style it like this,
+
+178
+00:08:06.584 --> 00:08:08.009
+in the code here.
+
+179
+00:08:08.009 --> 00:08:10.193
+So, what should we do in order to put
+
+180
+00:08:10.193 --> 00:08:13.298
+these two parts of the text, one under another?
+
+181
+00:08:13.298 --> 00:08:16.282
+Do you have any idea of a good way of doing this?
+
+182
+00:08:16.282 --> 00:08:17.901
+I think the best way is to display
+
+183
+00:08:17.901 --> 00:08:20.276
+them both as block level elements.
+
+184
+00:08:20.276 --> 00:08:22.188
+Because remember that block elements
+
+185
+00:08:22.188 --> 00:08:24.932
+occupy the entire width that they have available.
+
+186
+00:08:24.932 --> 00:08:26.806
+And more importantly for this case,
+
+187
+00:08:26.806 --> 00:08:30.347
+they create line breaks after and before them.
+
+188
+00:08:30.347 --> 00:08:32.470
+And so that's exactly what we want.
+
+189
+00:08:32.470 --> 00:08:35.572
+So a span element is by default, an inline element.
+
+190
+00:08:35.572 --> 00:08:37.217
+So it's just like text.
+
+191
+00:08:37.217 --> 00:08:39.557
+And so we use the display property.
+
+192
+00:08:39.557 --> 00:08:42.919
+Display, and display it as a block.
+
+193
+00:08:42.919 --> 00:08:43.752
+Simple as that.
+
+194
+00:08:43.752 --> 00:08:47.909
+And the same thing down here for the other span element.
+
+195
+00:08:47.909 --> 00:08:49.909
+Display, and also block.
+
+196
+00:08:51.025 --> 00:08:52.396
+So that solves that part.
+
+197
+00:08:52.396 --> 00:08:55.556
+Now they need different font sizes.
+
+198
+00:08:55.556 --> 00:08:59.185
+So let's set this one to 60 pixels.
+
+199
+00:08:59.185 --> 00:09:01.518
+Give it a font white of 400.
+
+200
+00:09:03.368 --> 00:09:07.921
+Because by default, the H one has a higher font white, okay.
+
+201
+00:09:07.921 --> 00:09:10.956
+And then we also give it the letter spacing of,
+
+202
+00:09:10.956 --> 00:09:12.706
+let's say, 35 pixels.
+
+203
+00:09:13.958 --> 00:09:17.020
+Okay. And now similar specifications down here
+
+204
+00:09:17.020 --> 00:09:19.520
+for the sub-part of the H one.
+
+205
+00:09:20.656 --> 00:09:24.593
+So a font size in this case of 20 pixels,
+
+206
+00:09:24.593 --> 00:09:26.843
+font weight of 400 as well.
+
+207
+00:09:29.804 --> 00:09:33.414
+And the letter spacing, I'm going to put it to 15 pixels,
+
+208
+00:09:33.414 --> 00:09:35.862
+just to try it out, and if it doesn't look good,
+
+209
+00:09:35.862 --> 00:09:39.828
+we can always come back and adjust it.
+
+210
+00:09:39.828 --> 00:09:42.209
+So, I'm gonna reload.
+
+211
+00:09:42.209 --> 00:09:44.290
+And alright, it already looks pretty good.
+
+212
+00:09:44.290 --> 00:09:47.290
+Let's take a look at the inspector here, so,
+
+213
+00:09:47.290 --> 00:09:49.265
+to see what's happening here.
+
+214
+00:09:49.265 --> 00:09:50.828
+And indeed, so this is now a block,
+
+215
+00:09:50.828 --> 00:09:51.841
+and this is another block.
+
+216
+00:09:51.841 --> 00:09:54.709
+It occupies 100% of the width,
+
+217
+00:09:54.709 --> 00:09:56.505
+as you can see in the blue box,
+
+218
+00:09:56.505 --> 00:09:58.660
+exactly like a block element should behave.
+
+219
+00:09:58.660 --> 00:10:02.364
+And of course this also forces them into another line.
+
+220
+00:10:02.364 --> 00:10:06.653
+Now we need to slightly increase the letter spacing here.
+
+221
+00:10:06.653 --> 00:10:08.070
+So 17 looks good.
+
+222
+00:10:08.977 --> 00:10:10.144
+Maybe 17 five.
+
+223
+00:10:11.080 --> 00:10:12.110
+17 four.
+
+224
+00:10:12.110 --> 00:10:13.119
+Okay.
+
+225
+00:10:13.119 --> 00:10:14.574
+That looks about right.
+
+226
+00:10:14.574 --> 00:10:15.788
+So let's memorize this.
+
+227
+00:10:15.788 --> 00:10:17.157
+So 7.4.
+
+228
+00:10:17.157 --> 00:10:19.851
+And then also the weight of the font here
+
+229
+00:10:19.851 --> 00:10:23.142
+looks a bit too thin here compared to that one, okay.
+
+230
+00:10:23.142 --> 00:10:24.822
+So let's also increase that.
+
+231
+00:10:24.822 --> 00:10:27.239
+So the other spacing is 17.4.
+
+232
+00:10:28.351 --> 00:10:30.006
+17.4 pixels.
+
+233
+00:10:30.006 --> 00:10:32.162
+And now let's take a look at which weight
+
+234
+00:10:32.162 --> 00:10:33.139
+we actually have available.
+
+235
+00:10:33.139 --> 00:10:36.562
+So we have 100, 300, 400, 700, and 900.
+
+236
+00:10:36.562 --> 00:10:38.500
+So these are the font weight
+
+237
+00:10:38.500 --> 00:10:41.340
+that are loaded for this specific lotto font.
+
+238
+00:10:41.340 --> 00:10:44.923
+So we had 400, so let's now jump up to 700.
+
+239
+00:10:48.143 --> 00:10:50.486
+Taking a look again.
+
+240
+00:10:50.486 --> 00:10:53.299
+And yeah, so this looks much better now.
+
+241
+00:10:53.299 --> 00:10:55.183
+Alright. And with that formatted,
+
+242
+00:10:55.183 --> 00:10:57.954
+we should now find a way to make this displayed
+
+243
+00:10:57.954 --> 00:10:59.485
+exactly in the center.
+
+244
+00:10:59.485 --> 00:11:02.750
+Now of course, this should stay exactly in the center
+
+245
+00:11:02.750 --> 00:11:04.827
+no matter what the screen size is.
+
+246
+00:11:04.827 --> 00:11:06.359
+So no matter the width,
+
+247
+00:11:06.359 --> 00:11:10.219
+and no matter the height of the window, right.
+
+248
+00:11:10.219 --> 00:11:12.535
+No matter what height we have for the screen,
+
+249
+00:11:12.535 --> 00:11:15.273
+we always want this to stay in the middle.
+
+250
+00:11:15.273 --> 00:11:17.860
+Because of course, we're building a responsive website here.
+
+251
+00:11:17.860 --> 00:11:19.612
+And more about that later, again.
+
+252
+00:11:19.612 --> 00:11:21.688
+But for now, what we need to focus on,
+
+253
+00:11:21.688 --> 00:11:25.023
+is to put this text here, exactly here in the center.
+
+254
+00:11:25.023 --> 00:11:27.945
+So let's find out how we're gonna do that.
+
+255
+00:11:27.945 --> 00:11:31.766
+Now, first off, let's go back to our markup here in HTML,
+
+256
+00:11:31.766 --> 00:11:32.821
+because we're actually going to
+
+257
+00:11:32.821 --> 00:11:36.392
+put all of this in a different box, in a container,
+
+258
+00:11:36.392 --> 00:11:38.338
+because we're gonna add something more
+
+259
+00:11:38.338 --> 00:11:40.370
+into this box later on.
+
+260
+00:11:40.370 --> 00:11:41.747
+I can actually show you,
+
+261
+00:11:41.747 --> 00:11:43.688
+we're going to add this button here,
+
+262
+00:11:43.688 --> 00:11:44.568
+also in the same box,
+
+263
+00:11:44.568 --> 00:11:47.340
+which also should stay in the center by then.
+
+264
+00:11:47.340 --> 00:11:48.316
+Alright.
+
+265
+00:11:48.316 --> 00:11:51.318
+So we cannot just center this part here,
+
+266
+00:11:51.318 --> 00:11:54.468
+but we're going to center an entire box.
+
+267
+00:11:54.468 --> 00:11:57.618
+Like this. I'm going to show you.
+
+268
+00:11:57.618 --> 00:12:00.241
+So this entire box here
+
+269
+00:12:00.241 --> 00:12:02.408
+is what we're going to do,
+
+270
+00:12:04.316 --> 00:12:05.483
+and to center.
+
+271
+00:12:06.674 --> 00:12:08.507
+So, let's just call it
+
+272
+00:12:09.963 --> 00:12:11.380
+text box for now.
+
+273
+00:12:13.478 --> 00:12:16.542
+And then I'm gonna put all of this
+
+274
+00:12:16.542 --> 00:12:17.375
+inside.
+
+275
+00:12:18.556 --> 00:12:23.040
+So, text box is what we're gonna style next.
+
+276
+00:12:23.040 --> 00:12:24.082
+I'm putting it here just to follow
+
+277
+00:12:24.082 --> 00:12:26.582
+the natural order of the HTML.
+
+278
+00:12:30.075 --> 00:12:31.413
+So, text box.
+
+279
+00:12:31.413 --> 00:12:34.395
+So, what is the best way to exactly center that box
+
+280
+00:12:34.395 --> 00:12:37.397
+in the middle of our header?
+
+281
+00:12:37.397 --> 00:12:39.103
+And the answer is that, once again,
+
+282
+00:12:39.103 --> 00:12:41.383
+we're going to use absolute positioning.
+
+283
+00:12:41.383 --> 00:12:42.216
+Alright?
+
+284
+00:12:42.216 --> 00:12:44.856
+So, position absolute again.
+
+285
+00:12:44.856 --> 00:12:47.234
+Now about the top, and the left.
+
+286
+00:12:47.234 --> 00:12:49.200
+They will have to be a bit different.
+
+287
+00:12:49.200 --> 00:12:50.509
+And I'm going to show you how.
+
+288
+00:12:50.509 --> 00:12:53.412
+So, we start by saying top 50%,
+
+289
+00:12:53.412 --> 00:12:54.912
+and left 50%.
+
+290
+00:12:57.821 --> 00:12:59.854
+And just to illustrate this a bit better,
+
+291
+00:12:59.854 --> 00:13:03.014
+I will actually put a background color here, okay.
+
+292
+00:13:03.014 --> 00:13:04.431
+Background color.
+
+293
+00:13:05.830 --> 00:13:07.387
+Something, it doesn't really matter.
+
+294
+00:13:07.387 --> 00:13:08.962
+So I'm just putting red here.
+
+295
+00:13:08.962 --> 00:13:11.697
+And now I'm going to show you what happens.
+
+296
+00:13:11.697 --> 00:13:14.233
+Alright, so this is not quite where we want it to be.
+
+297
+00:13:14.233 --> 00:13:15.066
+Right?
+
+298
+00:13:15.066 --> 00:13:17.105
+But actually the code did what we wanted.
+
+299
+00:13:17.105 --> 00:13:20.732
+Because this here is clearly 50% from the left.
+
+300
+00:13:20.732 --> 00:13:22.551
+This part of the box.
+
+301
+00:13:22.551 --> 00:13:24.812
+Which is where the measure starts.
+
+302
+00:13:24.812 --> 00:13:26.747
+So where the 50% starts counting.
+
+303
+00:13:26.747 --> 00:13:28.754
+It's from this side, all the way to this side.
+
+304
+00:13:28.754 --> 00:13:29.587
+And it's 50%.
+
+305
+00:13:29.587 --> 00:13:31.622
+It's half of the element.
+
+306
+00:13:31.622 --> 00:13:32.455
+Half of the header.
+
+307
+00:13:32.455 --> 00:13:34.509
+That's what left 50% means.
+
+308
+00:13:34.509 --> 00:13:37.703
+It's 50% of the width of the parent element.
+
+309
+00:13:37.703 --> 00:13:39.155
+And it's actually working.
+
+310
+00:13:39.155 --> 00:13:41.921
+And the same thing applies to the top.
+
+311
+00:13:41.921 --> 00:13:43.431
+So it's from here to here,
+
+312
+00:13:43.431 --> 00:13:44.946
+it's actually 50%.
+
+313
+00:13:44.946 --> 00:13:47.549
+It's half of the height of the parent.
+
+314
+00:13:47.549 --> 00:13:49.337
+Now what we wanna do in order for this
+
+315
+00:13:49.337 --> 00:13:50.858
+to be exactly in the center,
+
+316
+00:13:50.858 --> 00:13:52.716
+is to shift this just a little bit,
+
+317
+00:13:52.716 --> 00:13:54.678
+so that the center of this box
+
+318
+00:13:54.678 --> 00:13:56.378
+is here in the center, is here.
+
+319
+00:13:56.378 --> 00:13:58.030
+That's where we want it.
+
+320
+00:13:58.030 --> 00:14:00.109
+So we want this middle of the box to be just here
+
+321
+00:14:00.109 --> 00:14:02.290
+where now the beginning of the box is.
+
+322
+00:14:02.290 --> 00:14:04.694
+And the same thing applies to the height.
+
+323
+00:14:04.694 --> 00:14:06.377
+So we want this center here of the box,
+
+324
+00:14:06.377 --> 00:14:07.870
+this horizontal center,
+
+325
+00:14:07.870 --> 00:14:11.187
+we want it to be here where the box now begins.
+
+326
+00:14:11.187 --> 00:14:12.020
+So another way,
+
+327
+00:14:12.020 --> 00:14:15.006
+what we want is to translate this entire box.
+
+328
+00:14:15.006 --> 00:14:17.004
+And it's actually pretty easy to do.
+
+329
+00:14:17.004 --> 00:14:21.114
+We just need to use the transform property in CSS.
+
+330
+00:14:21.114 --> 00:14:23.577
+Transform, and translate.
+
+331
+00:14:23.577 --> 00:14:24.961
+Translate.
+
+332
+00:14:24.961 --> 00:14:26.730
+And now we just need to specify how much we
+
+333
+00:14:26.730 --> 00:14:29.862
+wanna translate on x and on epsilon.
+
+334
+00:14:29.862 --> 00:14:33.529
+And what we want is minus 50% for both.
+
+335
+00:14:35.442 --> 00:14:36.275
+And that's it.
+
+336
+00:14:36.275 --> 00:14:39.604
+And that's because these 50% are now no longer
+
+337
+00:14:39.604 --> 00:14:41.335
+in relation to the parent element,
+
+338
+00:14:41.335 --> 00:14:42.751
+but of the element itself.
+
+339
+00:14:42.751 --> 00:14:45.674
+And so if we say we want minus 50%,
+
+340
+00:14:45.674 --> 00:14:49.141
+it will be shifted half of the width to the left side.
+
+341
+00:14:49.141 --> 00:14:50.382
+And the same for the height.
+
+342
+00:14:50.382 --> 00:14:52.909
+So minus 50% says that it will be shifted
+
+343
+00:14:52.909 --> 00:14:56.576
+50% of the element's height to the top.
+
+344
+00:14:58.127 --> 00:14:58.960
+And so,
+
+345
+00:14:59.945 --> 00:15:00.908
+and so here it is.
+
+346
+00:15:00.908 --> 00:15:02.555
+It's now exactly at the middle.
+
+347
+00:15:02.555 --> 00:15:03.528
+Vertically,
+
+348
+00:15:03.528 --> 00:15:04.910
+and also horizontally.
+
+349
+00:15:04.910 --> 00:15:07.194
+It's completely in the middle now.
+
+350
+00:15:07.194 --> 00:15:09.260
+Now because of this wedge that we cut out here,
+
+351
+00:15:09.260 --> 00:15:10.236
+it looks a bit weird.
+
+352
+00:15:10.236 --> 00:15:13.493
+It looks like it's actually more down
+
+353
+00:15:13.493 --> 00:15:15.578
+than where it should be, right?
+
+354
+00:15:15.578 --> 00:15:18.221
+It looks like it should be like somewhere here.
+
+355
+00:15:18.221 --> 00:15:20.279
+And so instead of shifting it down 50%,
+
+356
+00:15:20.279 --> 00:15:23.059
+maybe we can just do 40%.
+
+357
+00:15:23.059 --> 00:15:26.046
+We stated the top to be 40%,
+
+358
+00:15:26.046 --> 00:15:29.783
+and then that should fix our problem.
+
+359
+00:15:29.783 --> 00:15:32.537
+So this looks actually a lot better.
+
+360
+00:15:32.537 --> 00:15:35.670
+And just to confirm that everything works as expected,
+
+361
+00:15:35.670 --> 00:15:39.226
+we can just see that this nicely adapts
+
+362
+00:15:39.226 --> 00:15:42.287
+to when we decrease the screen size.
+
+363
+00:15:42.287 --> 00:15:44.505
+The same, we'll just do it like this,
+
+364
+00:15:44.505 --> 00:15:47.048
+the same happens with the view port height.
+
+365
+00:15:47.048 --> 00:15:48.588
+So it always stays nicely,
+
+366
+00:15:48.588 --> 00:15:49.574
+not exactly in the center,
+
+367
+00:15:49.574 --> 00:15:51.025
+but
+
+368
+00:15:51.025 --> 00:15:53.015
+at these 40% top
+
+369
+00:15:53.015 --> 00:15:55.322
+where we specified it to be.
+
+370
+00:15:55.322 --> 00:15:56.155
+Alright.
+
+371
+00:15:56.155 --> 00:15:57.273
+So you learned a great new trick.
+
+372
+00:15:57.273 --> 00:15:58.656
+Maybe you had already used it
+
+373
+00:15:58.656 --> 00:16:01.340
+because I taught it in my other course as well.
+
+374
+00:16:01.340 --> 00:16:03.284
+But I think I didn't explain it this well.
+
+375
+00:16:03.284 --> 00:16:04.595
+So I thought it was important
+
+376
+00:16:04.595 --> 00:16:07.089
+to make it really clear how this works.
+
+377
+00:16:07.089 --> 00:16:08.389
+Because it's really important.
+
+378
+00:16:08.389 --> 00:16:11.038
+You can now use these concepts for other things.
+
+379
+00:16:11.038 --> 00:16:14.426
+Because now you totally understand how this worked.
+
+380
+00:16:14.426 --> 00:16:17.610
+So again, just to make everything 100% sure.
+
+381
+00:16:17.610 --> 00:16:19.874
+These 40% and these 50%,
+
+382
+00:16:19.874 --> 00:16:23.079
+they are in relation to the parent element.
+
+383
+00:16:23.079 --> 00:16:25.248
+So 50% of the parent element
+
+384
+00:16:25.248 --> 00:16:28.778
+is where the text box was located to the left side.
+
+385
+00:16:28.778 --> 00:16:31.386
+But, on the transform here, when we translated,
+
+386
+00:16:31.386 --> 00:16:34.075
+this is in relation to the element itself.
+
+387
+00:16:34.075 --> 00:16:35.368
+And this makes it possible
+
+388
+00:16:35.368 --> 00:16:37.821
+that the element is exactly at the center.
+
+389
+00:16:37.821 --> 00:16:38.654
+Alright.
+
+390
+00:16:38.654 --> 00:16:40.311
+And that's enough for this lecture.
+
+391
+00:16:40.311 --> 00:16:42.458
+Next time, we're going to do this
+
+392
+00:16:42.458 --> 00:16:44.978
+little nice animation that we see here
+
+393
+00:16:44.978 --> 00:16:46.668
+when we reload the page.
+
+394
+00:16:46.668 --> 00:16:47.712
+So, this.
+
+395
+00:16:47.712 --> 00:16:50.291
+You saw it coming in from the left side,
+
+396
+00:16:50.291 --> 00:16:51.427
+and this one from the right side.
+
+397
+00:16:51.427 --> 00:16:53.741
+Let's do it again.
+
+398
+00:16:53.741 --> 00:16:55.685
+This entrance animation.
+
+399
+00:16:55.685 --> 00:16:57.321
+That's what we're going to do next,
+
+400
+00:16:57.321 --> 00:16:59.214
+which is really exciting I think.
+
+401
+00:16:59.214 --> 00:17:02.381
+So stay tuned and see you in a second.
+

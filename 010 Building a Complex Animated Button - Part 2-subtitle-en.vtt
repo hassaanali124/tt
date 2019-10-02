@@ -1,0 +1,1258 @@
+﻿WEBVTT
+
+1
+00:00:01.635 --> 00:00:03.417
+<v Instructor>So let's now continue building</v>
+
+2
+00:00:03.417 --> 00:00:05.084
+our animated button.
+
+3
+00:00:05.980 --> 00:00:08.873
+So this is the final page and the final button.
+
+4
+00:00:08.873 --> 00:00:10.931
+And what we're missing here is this white part
+
+5
+00:00:10.931 --> 00:00:14.072
+that looks like it zooms out to infinity when we hover,
+
+6
+00:00:14.072 --> 00:00:16.136
+and it comes back when we hover out.
+
+7
+00:00:16.136 --> 00:00:16.969
+See.
+
+8
+00:00:16.969 --> 00:00:18.786
+So this nice effect.
+
+9
+00:00:18.786 --> 00:00:21.549
+It's not really necessary, of course, to add this.
+
+10
+00:00:21.549 --> 00:00:24.455
+But it was a great opportunity to show you the power
+
+11
+00:00:24.455 --> 00:00:27.563
+of CSS and of pseudo-elements.
+
+12
+00:00:27.563 --> 00:00:30.230
+So let me show you how we do it.
+
+13
+00:00:31.144 --> 00:00:33.832
+So as I said, we're gonna use pseudo-elements.
+
+14
+00:00:33.832 --> 00:00:35.377
+And pseudo-elements allow us
+
+15
+00:00:35.377 --> 00:00:38.440
+to style certain parts of elements.
+
+16
+00:00:38.440 --> 00:00:40.688
+For example, the after pseudo-element that we're
+
+17
+00:00:40.688 --> 00:00:43.463
+gonna use adds like a virtual element
+
+18
+00:00:43.463 --> 00:00:46.067
+right after the element that we're selecting.
+
+19
+00:00:46.067 --> 00:00:48.253
+And we can then style that element.
+
+20
+00:00:48.253 --> 00:00:50.260
+And so using this after pseudo-element
+
+21
+00:00:50.260 --> 00:00:54.148
+can be really powerful to do some cool effects.
+
+22
+00:00:54.148 --> 00:00:55.426
+And once you master it,
+
+23
+00:00:55.426 --> 00:00:58.103
+you're gonna want to use it all the time.
+
+24
+00:00:58.103 --> 00:00:59.686
+So, let me just add
+
+25
+00:01:01.915 --> 00:01:03.669
+the after pseudo-element.
+
+26
+00:01:03.669 --> 00:01:05.745
+So the trick here is to add an element
+
+27
+00:01:05.745 --> 00:01:08.441
+that looks exactly like the button that we already have,
+
+28
+00:01:08.441 --> 00:01:10.724
+but we put it behind the button.
+
+29
+00:01:10.724 --> 00:01:12.579
+And when we hover out of the button,
+
+30
+00:01:12.579 --> 00:01:14.306
+then this hidden pseudo-element
+
+31
+00:01:14.306 --> 00:01:18.174
+amazingly goes back behind the button.
+
+32
+00:01:18.174 --> 00:01:20.565
+So let's see how we can do this.
+
+33
+00:01:20.565 --> 00:01:23.119
+First, in order for an after pseudo-element
+
+34
+00:01:23.119 --> 00:01:25.272
+to actually appear on the page,
+
+35
+00:01:25.272 --> 00:01:28.072
+we need to specify its content property.
+
+36
+00:01:28.072 --> 00:01:29.888
+So that's always necessary.
+
+37
+00:01:29.888 --> 00:01:31.250
+It doesn't matter what the content is.
+
+38
+00:01:31.250 --> 00:01:33.654
+It can even be empty like we're gonna do here,
+
+39
+00:01:33.654 --> 00:01:34.985
+but we have to specify it.
+
+40
+00:01:34.985 --> 00:01:37.115
+Otherwise it's not going to appear.
+
+41
+00:01:37.115 --> 00:01:39.535
+And the same thing with the display property.
+
+42
+00:01:39.535 --> 00:01:42.108
+So we have to specify the display property.
+
+43
+00:01:42.108 --> 00:01:44.507
+And in this case, we're gonna say it's an inline block
+
+44
+00:01:44.507 --> 00:01:49.019
+because the button that we have is also an inline block.
+
+45
+00:01:49.019 --> 00:01:51.593
+And so, again, we want it to be exactly the same.
+
+46
+00:01:51.593 --> 00:01:53.299
+We want it to look the same.
+
+47
+00:01:53.299 --> 00:01:57.193
+So we want to have a height of 100%.
+
+48
+00:01:57.193 --> 00:02:01.276
+And we want to have a width of 100% as well.
+
+49
+00:02:02.419 --> 00:02:04.873
+And this works because the after pseudo-element
+
+50
+00:02:04.873 --> 00:02:08.233
+is basically treated like a child of the button.
+
+51
+00:02:08.233 --> 00:02:11.242
+And so if we say that we want the height to be 100%,
+
+52
+00:02:11.242 --> 00:02:14.559
+that's 100% of the width of the button.
+
+53
+00:02:14.559 --> 00:02:18.720
+And so suppose that the button has 100 pixels
+
+54
+00:02:18.720 --> 00:02:20.829
+of height and 50 pixels of width.
+
+55
+00:02:20.829 --> 00:02:22.421
+And so this after pseudo-element
+
+56
+00:02:22.421 --> 00:02:26.587
+will have the exact same dimensions if we set it to 100%.
+
+57
+00:02:26.587 --> 00:02:30.936
+Now the border rate is, should also be the same.
+
+58
+00:02:30.936 --> 00:02:31.877
+100 pixels.
+
+59
+00:02:31.877 --> 00:02:33.858
+So something really big.
+
+60
+00:02:33.858 --> 00:02:36.321
+And now, we also want it to be white.
+
+61
+00:02:36.321 --> 00:02:37.770
+But in order for it to be white,
+
+62
+00:02:37.770 --> 00:02:40.890
+we actually should make another after pseudo-element
+
+63
+00:02:40.890 --> 00:02:44.039
+but this time for the button, right.
+
+64
+00:02:44.039 --> 00:02:45.789
+So let's put it here.
+
+65
+00:02:47.284 --> 00:02:48.117
+And after.
+
+66
+00:02:50.180 --> 00:02:52.495
+And so background color
+
+67
+00:02:52.495 --> 00:02:53.828
+should be white.
+
+68
+00:02:55.695 --> 00:02:56.528
+Alright.
+
+69
+00:02:56.528 --> 00:03:00.695
+Now let's just see on our page if it actually shows up.
+
+70
+00:03:02.921 --> 00:03:06.669
+So right now it still looks like it's part of our element.
+
+71
+00:03:06.669 --> 00:03:09.196
+And so we should change that.
+
+72
+00:03:09.196 --> 00:03:10.235
+So what we wanna do,
+
+73
+00:03:10.235 --> 00:03:11.154
+remember,
+
+74
+00:03:11.154 --> 00:03:14.419
+is to put it behind our actual button.
+
+75
+00:03:14.419 --> 00:03:15.993
+So how can we do that?
+
+76
+00:03:15.993 --> 00:03:18.653
+And we use absolute positioning.
+
+77
+00:03:18.653 --> 00:03:20.736
+So position and absolute.
+
+78
+00:03:21.744 --> 00:03:24.951
+And then we just say it should be zero from the top
+
+79
+00:03:24.951 --> 00:03:26.868
+and zero from the left.
+
+80
+00:03:27.758 --> 00:03:30.837
+Now remember that this absolute positioning
+
+81
+00:03:30.837 --> 00:03:32.642
+needs to have a reference.
+
+82
+00:03:32.642 --> 00:03:34.763
+And the reference is the first element
+
+83
+00:03:34.763 --> 00:03:37.349
+with the relative position that it can find.
+
+84
+00:03:37.349 --> 00:03:39.096
+Now in this case it would be the header
+
+85
+00:03:39.096 --> 00:03:41.216
+because remember we did that before.
+
+86
+00:03:41.216 --> 00:03:42.514
+But we don't want it to be the header.
+
+87
+00:03:42.514 --> 00:03:45.078
+We want it to be hidden after the button.
+
+88
+00:03:45.078 --> 00:03:47.053
+And so, the reference should be the button.
+
+89
+00:03:47.053 --> 00:03:48.986
+Therefore, what we have to do
+
+90
+00:03:48.986 --> 00:03:53.153
+is to set the position property of the button to relative.
+
+91
+00:03:54.330 --> 00:03:55.627
+Alright.
+
+92
+00:03:55.627 --> 00:03:59.122
+And so now it should be hidden behind the button.
+
+93
+00:03:59.122 --> 00:04:00.925
+Now one more thing that we have to do
+
+94
+00:04:00.925 --> 00:04:02.528
+is to set the z index.
+
+95
+00:04:02.528 --> 00:04:04.391
+And we will put it to minus one.
+
+96
+00:04:04.391 --> 00:04:07.165
+So remember the z index defines the position
+
+97
+00:04:07.165 --> 00:04:10.546
+of the elements if they are one on top of another.
+
+98
+00:04:10.546 --> 00:04:11.851
+And so this one has minus one
+
+99
+00:04:11.851 --> 00:04:14.080
+and so it's definitely behind the button.
+
+100
+00:04:14.080 --> 00:04:14.913
+Now since it's hidden,
+
+101
+00:04:14.913 --> 00:04:17.188
+I cannot really show it to you on the page now.
+
+102
+00:04:17.188 --> 00:04:20.068
+But we're gonna see it in a little bit.
+
+103
+00:04:20.068 --> 00:04:22.372
+So when do we actually want to see it.
+
+104
+00:04:22.372 --> 00:04:24.743
+We want to see it when we hover the button.
+
+105
+00:04:24.743 --> 00:04:28.737
+So what we're gonna do is to write it like this.
+
+106
+00:04:28.737 --> 00:04:30.560
+And this may seem a bit complicated,
+
+107
+00:04:30.560 --> 00:04:31.982
+but it's actually not.
+
+108
+00:04:31.982 --> 00:04:34.836
+So, when we hover the button,
+
+109
+00:04:34.836 --> 00:04:37.012
+then we want some certain styles
+
+110
+00:04:37.012 --> 00:04:39.429
+for the after pseudo-element.
+
+111
+00:04:41.332 --> 00:04:44.087
+So this looks a bit weird but it makes total sense.
+
+112
+00:04:44.087 --> 00:04:46.573
+So this is an after pseudo-element
+
+113
+00:04:46.573 --> 00:04:50.413
+only when we have the button on the hover state.
+
+114
+00:04:50.413 --> 00:04:53.267
+And what do we want to happen?
+
+115
+00:04:53.267 --> 00:04:54.398
+We want it to be bigger.
+
+116
+00:04:54.398 --> 00:04:55.964
+Right. Remember.
+
+117
+00:04:55.964 --> 00:04:58.487
+We want the element to grow and to fade out.
+
+118
+00:04:58.487 --> 00:05:03.056
+And so, what we first do is to use once again,
+
+119
+00:05:03.056 --> 00:05:04.133
+the transform property.
+
+120
+00:05:04.133 --> 00:05:06.955
+And I told you it was really important and,
+
+121
+00:05:06.955 --> 00:05:08.288
+so yeah, it is.
+
+122
+00:05:08.288 --> 00:05:09.864
+This time we do a scale.
+
+123
+00:05:09.864 --> 00:05:11.572
+So what scale does is to simply
+
+124
+00:05:11.572 --> 00:05:13.410
+increase the element.
+
+125
+00:05:13.410 --> 00:05:15.114
+So if we do scale two,
+
+126
+00:05:15.114 --> 00:05:18.851
+then it will appear double the size that it had before.
+
+127
+00:05:18.851 --> 00:05:23.293
+So now we can actually check if it's working alright.
+
+128
+00:05:23.293 --> 00:05:24.311
+So reload.
+
+129
+00:05:24.311 --> 00:05:25.309
+And, whoa.
+
+130
+00:05:25.309 --> 00:05:26.164
+There it is.
+
+131
+00:05:26.164 --> 00:05:27.874
+So this white part that you see
+
+132
+00:05:27.874 --> 00:05:30.705
+outside here is the pseudo-element
+
+133
+00:05:30.705 --> 00:05:33.800
+that becomes visible as soon as we hover over the button.
+
+134
+00:05:33.800 --> 00:05:38.240
+Let's actually make it a different color here,
+
+135
+00:05:38.240 --> 00:05:39.073
+like red,
+
+136
+00:05:39.073 --> 00:05:42.637
+just so that you can see the difference.
+
+137
+00:05:42.637 --> 00:05:43.470
+And whoa.
+
+138
+00:05:43.470 --> 00:05:45.498
+Now it's everything red.
+
+139
+00:05:45.498 --> 00:05:47.163
+But that's not a problem.
+
+140
+00:05:47.163 --> 00:05:49.837
+For some reason the original button is also getting red.
+
+141
+00:05:49.837 --> 00:05:52.660
+But we still can be sure the pseudo-element is behind
+
+142
+00:05:52.660 --> 00:05:55.041
+the button because we still can see the text.
+
+143
+00:05:55.041 --> 00:05:57.826
+And so that means that the original button
+
+144
+00:05:57.826 --> 00:06:00.993
+is still on top of the pseudo-element.
+
+145
+00:06:02.375 --> 00:06:05.792
+Let's put it back to white, where it was.
+
+146
+00:06:07.790 --> 00:06:10.333
+And we don't want to scale it this much.
+
+147
+00:06:10.333 --> 00:06:13.083
+So let's just say one point five.
+
+148
+00:06:14.289 --> 00:06:17.149
+And we also want this to be animated just like before.
+
+149
+00:06:17.149 --> 00:06:19.908
+So where do we have to put the transition property?
+
+150
+00:06:19.908 --> 00:06:20.741
+Exactly.
+
+151
+00:06:20.741 --> 00:06:22.392
+We do it on the initial state.
+
+152
+00:06:22.392 --> 00:06:25.062
+In this case the initial state is of course
+
+153
+00:06:25.062 --> 00:06:27.904
+this after pseudo-element.
+
+154
+00:06:27.904 --> 00:06:28.737
+So we say
+
+155
+00:06:30.657 --> 00:06:31.574
+transition,
+
+156
+00:06:32.954 --> 00:06:35.045
+and again I'm going to use all here,
+
+157
+00:06:35.045 --> 00:06:39.212
+and then use, let's say, point four seconds in this case.
+
+158
+00:06:41.545 --> 00:06:43.168
+So here we had point two,
+
+159
+00:06:43.168 --> 00:06:47.574
+but we want this one to take a little bit longer.
+
+160
+00:06:47.574 --> 00:06:48.783
+Now what also happens,
+
+161
+00:06:48.783 --> 00:06:51.522
+is that the element actually fades out.
+
+162
+00:06:51.522 --> 00:06:52.911
+So opacity zero.
+
+163
+00:06:52.911 --> 00:06:55.043
+That's the trick for fading something out,
+
+164
+00:06:55.043 --> 00:06:57.241
+is going to opacity zero.
+
+165
+00:06:57.241 --> 00:06:58.930
+We did that before in our other animation
+
+166
+00:06:58.930 --> 00:07:00.351
+in the lecture before,
+
+167
+00:07:00.351 --> 00:07:02.558
+and so here we're doing it again.
+
+168
+00:07:02.558 --> 00:07:06.150
+So opacity zero sets something to invisible basically.
+
+169
+00:07:06.150 --> 00:07:07.342
+So let's check out
+
+170
+00:07:07.342 --> 00:07:09.009
+if it works already.
+
+171
+00:07:09.941 --> 00:07:11.248
+Yeah, that's actually it.
+
+172
+00:07:11.248 --> 00:07:13.231
+It's already working, right?
+
+173
+00:07:13.231 --> 00:07:14.388
+It comes back.
+
+174
+00:07:14.388 --> 00:07:16.297
+It goes out and it comes back.
+
+175
+00:07:16.297 --> 00:07:18.139
+So, really cool, right?
+
+176
+00:07:18.139 --> 00:07:20.173
+Now we can make this a a little bit better
+
+177
+00:07:20.173 --> 00:07:23.247
+because if you look closely at the top of the button,
+
+178
+00:07:23.247 --> 00:07:25.138
+and you see that it looks really small.
+
+179
+00:07:25.138 --> 00:07:27.529
+So the part that's fading out is like really small.
+
+180
+00:07:27.529 --> 00:07:28.587
+Take a look.
+
+181
+00:07:28.587 --> 00:07:30.850
+So let's do this a bit better.
+
+182
+00:07:30.850 --> 00:07:32.099
+And actually with this I can show you
+
+183
+00:07:32.099 --> 00:07:33.568
+that there are different scales.
+
+184
+00:07:33.568 --> 00:07:36.639
+So scale, without any epsilon here,
+
+185
+00:07:36.639 --> 00:07:38.493
+simply scales the entire element.
+
+186
+00:07:38.493 --> 00:07:40.806
+But we can do scale x,
+
+187
+00:07:40.806 --> 00:07:43.925
+and then that's how it's gonna scale on the x direction.
+
+188
+00:07:43.925 --> 00:07:45.567
+On the x axis.
+
+189
+00:07:45.567 --> 00:07:48.898
+And here we want to do one point four.
+
+190
+00:07:48.898 --> 00:07:52.407
+And now scale, epsilon as you can imagine,
+
+191
+00:07:52.407 --> 00:07:53.405
+in the other direction.
+
+192
+00:07:53.405 --> 00:07:56.549
+So let's put one point six here.
+
+193
+00:07:56.549 --> 00:07:57.989
+So they are different scales.
+
+194
+00:07:57.989 --> 00:08:00.322
+Just like they are different translates,
+
+195
+00:08:00.322 --> 00:08:03.299
+or rotates, or other functions that we can put
+
+196
+00:08:03.299 --> 00:08:04.943
+here in the transform.
+
+197
+00:08:04.943 --> 00:08:06.860
+So, let's check it out.
+
+198
+00:08:08.742 --> 00:08:09.575
+And, yeah.
+
+199
+00:08:09.575 --> 00:08:11.992
+So now it looks a bit better.
+
+200
+00:08:13.015 --> 00:08:14.360
+So, really cool.
+
+201
+00:08:14.360 --> 00:08:16.203
+There's just one thing left here because,
+
+202
+00:08:16.203 --> 00:08:20.370
+take a look here what happens when we load the page.
+
+203
+00:08:21.220 --> 00:08:22.402
+You saw this.
+
+204
+00:08:22.402 --> 00:08:24.477
+This came up moving from the bottom.
+
+205
+00:08:24.477 --> 00:08:26.926
+So first, we saw these two elements coming in,
+
+206
+00:08:26.926 --> 00:08:28.702
+like we coded before.
+
+207
+00:08:28.702 --> 00:08:30.286
+And then the button came up
+
+208
+00:08:30.286 --> 00:08:32.671
+from the bottom to this position.
+
+209
+00:08:32.671 --> 00:08:34.369
+So let's very quickly code up
+
+210
+00:08:34.369 --> 00:08:36.079
+another animation for that.
+
+211
+00:08:36.079 --> 00:08:38.963
+And we're gonna put it here after this one.
+
+212
+00:08:38.963 --> 00:08:40.907
+Actually I'm gonna copy it
+
+213
+00:08:40.907 --> 00:08:43.157
+'cause it's pretty similar.
+
+214
+00:08:44.645 --> 00:08:45.562
+So move in,
+
+215
+00:08:46.964 --> 00:08:49.032
+let's say bottom now,
+
+216
+00:08:49.032 --> 00:08:50.070
+from the bottom.
+
+217
+00:08:50.070 --> 00:08:51.789
+This time we don't need any 80%
+
+218
+00:08:51.789 --> 00:08:54.303
+because it's just from one point to the other.
+
+219
+00:08:54.303 --> 00:08:56.926
+And now I'm going to leave it to you to specify,
+
+220
+00:08:56.926 --> 00:08:58.019
+let's see,
+
+221
+00:08:58.019 --> 00:08:59.661
+what we should put here.
+
+222
+00:08:59.661 --> 00:09:00.536
+So pause the video,
+
+223
+00:09:00.536 --> 00:09:04.536
+and try to figure out how this should look like.
+
+224
+00:09:05.929 --> 00:09:07.463
+So, did you figure it out?
+
+225
+00:09:07.463 --> 00:09:10.355
+How should the button be positioned
+
+226
+00:09:10.355 --> 00:09:13.368
+right in the beginning before the animation starts?
+
+227
+00:09:13.368 --> 00:09:16.247
+It should be a bit lower than its current position, right?
+
+228
+00:09:16.247 --> 00:09:17.947
+Because it's moving in from the bottom
+
+229
+00:09:17.947 --> 00:09:20.155
+to its original position.
+
+230
+00:09:20.155 --> 00:09:24.693
+And so we can do translate epsilon this time.
+
+231
+00:09:24.693 --> 00:09:27.900
+And put something like 30 pixels in here.
+
+232
+00:09:27.900 --> 00:09:29.308
+That's because remember,
+
+233
+00:09:29.308 --> 00:09:31.321
+for the epsilon direction
+
+234
+00:09:31.321 --> 00:09:32.425
+it goes like this.
+
+235
+00:09:32.425 --> 00:09:33.660
+So from top to bottom.
+
+236
+00:09:33.660 --> 00:09:37.108
+So if we want to move it down, it's a positive value.
+
+237
+00:09:37.108 --> 00:09:37.941
+Alright.
+
+238
+00:09:37.941 --> 00:09:40.364
+And let's now actually use this animation.
+
+239
+00:09:40.364 --> 00:09:44.114
+Now again there will be multiple buttons like this.
+
+240
+00:09:44.114 --> 00:09:45.798
+But I only want this animation to happen
+
+241
+00:09:45.798 --> 00:09:47.615
+on this particular button.
+
+242
+00:09:47.615 --> 00:09:48.486
+And so what I'm gonna do
+
+243
+00:09:48.486 --> 00:09:51.736
+is to create a new class on the button.
+
+244
+00:09:53.997 --> 00:09:54.830
+So button,
+
+245
+00:09:55.832 --> 00:09:56.988
+animated.
+
+246
+00:09:56.988 --> 00:09:58.930
+And only this button will have this class.
+
+247
+00:09:58.930 --> 00:10:00.175
+Okay?
+
+248
+00:10:00.175 --> 00:10:01.961
+So let's put it here.
+
+249
+00:10:01.961 --> 00:10:02.794
+Button.
+
+250
+00:10:03.996 --> 00:10:05.091
+Animated.
+
+251
+00:10:05.091 --> 00:10:07.808
+And then in here I will put the animation.
+
+252
+00:10:07.808 --> 00:10:08.915
+So animation,
+
+253
+00:10:08.915 --> 00:10:10.734
+and I'm going to use the shorten property
+
+254
+00:10:10.734 --> 00:10:12.348
+that I showed you before.
+
+255
+00:10:12.348 --> 00:10:15.265
+And now it's called move in bottom.
+
+256
+00:10:16.419 --> 00:10:20.518
+And let's use point five, second animation.
+
+257
+00:10:20.518 --> 00:10:24.166
+And we're gonna use an ease out this time.
+
+258
+00:10:24.166 --> 00:10:25.157
+Okay?
+
+259
+00:10:25.157 --> 00:10:28.245
+Now plus what we're gonna do is to have a delay.
+
+260
+00:10:28.245 --> 00:10:30.886
+So we don't want to start it at the same time as the others.
+
+261
+00:10:30.886 --> 00:10:33.016
+We want it to start slightly later.
+
+262
+00:10:33.016 --> 00:10:34.563
+So maybe not one entire second,
+
+263
+00:10:34.563 --> 00:10:37.471
+which is the animation time of the other two animations,
+
+264
+00:10:37.471 --> 00:10:40.217
+but maybe just 75% of that.
+
+265
+00:10:40.217 --> 00:10:41.467
+So .75 seconds.
+
+266
+00:10:43.112 --> 00:10:45.203
+So I told you that we could put all of
+
+267
+00:10:45.203 --> 00:10:47.497
+these values in the same animation property.
+
+268
+00:10:47.497 --> 00:10:50.109
+So this is the animation name, the animation duration,
+
+269
+00:10:50.109 --> 00:10:51.952
+the animation timing function,
+
+270
+00:10:51.952 --> 00:10:54.264
+and the animation delay.
+
+271
+00:10:54.264 --> 00:10:57.764
+So let's take a look at what happens here.
+
+272
+00:11:01.993 --> 00:11:03.288
+Alright, so you saw that.
+
+273
+00:11:03.288 --> 00:11:05.181
+Actually the button was visible
+
+274
+00:11:05.181 --> 00:11:07.286
+before the animation happened.
+
+275
+00:11:07.286 --> 00:11:09.134
+Let's take a look again.
+
+276
+00:11:09.134 --> 00:11:12.083
+So it stays visible and then it starts.
+
+277
+00:11:12.083 --> 00:11:15.029
+Now what could we do in order to prevent this.
+
+278
+00:11:15.029 --> 00:11:18.955
+We could simply put these initial states on the button.
+
+279
+00:11:18.955 --> 00:11:21.222
+But that would be highly impractical, right?
+
+280
+00:11:21.222 --> 00:11:22.873
+Wouldn't make much sense.
+
+281
+00:11:22.873 --> 00:11:26.433
+So there is another property related to animations.
+
+282
+00:11:26.433 --> 00:11:30.034
+And this one is called animation fill mode
+
+283
+00:11:30.034 --> 00:11:31.951
+So animation fill mode.
+
+284
+00:11:32.962 --> 00:11:35.879
+And now we can set it to backwards.
+
+285
+00:11:37.160 --> 00:11:38.511
+And what this does,
+
+286
+00:11:38.511 --> 00:11:40.373
+is that it will automatically apply
+
+287
+00:11:40.373 --> 00:11:45.044
+the styles up to zero percent before the animation starts.
+
+288
+00:11:45.044 --> 00:11:48.438
+So, again, these styles will now be applied
+
+289
+00:11:48.438 --> 00:11:50.731
+before the animation starts simply by using the
+
+290
+00:11:50.731 --> 00:11:54.942
+animation fill mode and set it to backwards.
+
+291
+00:11:54.942 --> 00:11:56.128
+So, pretty amazing right?
+
+292
+00:11:56.128 --> 00:11:59.280
+So it's really simple, simple solution to this problem.
+
+293
+00:11:59.280 --> 00:12:01.487
+And so let's try it again.
+
+294
+00:12:01.487 --> 00:12:03.928
+And, yeah, so here it works.
+
+295
+00:12:03.928 --> 00:12:04.761
+Alright.
+
+296
+00:12:04.761 --> 00:12:05.978
+And that's it for this lecture,
+
+297
+00:12:05.978 --> 00:12:08.213
+and actually for this section.
+
+298
+00:12:08.213 --> 00:12:10.089
+So, we've come a long way so far,
+
+299
+00:12:10.089 --> 00:12:13.205
+and we already coded a bunch of really cool stuff I think.
+
+300
+00:12:13.205 --> 00:12:16.184
+We already have the header already completed.
+
+301
+00:12:16.184 --> 00:12:17.805
+Only what's missing here is this navigation
+
+302
+00:12:17.805 --> 00:12:19.272
+but it's a bit too complex for now,
+
+303
+00:12:19.272 --> 00:12:22.384
+so we're gonna leave it for another time.
+
+304
+00:12:22.384 --> 00:12:24.937
+But for now, we've come far enough with this project
+
+305
+00:12:24.937 --> 00:12:27.347
+that it's now time to show you a little bit of
+
+306
+00:12:27.347 --> 00:12:29.872
+how CSS actually works behind the scenes.
+
+307
+00:12:29.872 --> 00:12:31.695
+So I have a couple of really great lectures
+
+308
+00:12:31.695 --> 00:12:34.671
+coming up which I spent a lot of time building for you.
+
+309
+00:12:34.671 --> 00:12:37.054
+But they will be really insightful and helpful,
+
+310
+00:12:37.054 --> 00:12:37.965
+I hope.
+
+311
+00:12:37.965 --> 00:12:38.798
+So,
+
+312
+00:12:38.798 --> 00:12:41.144
+review what we just did in this section maybe.
+
+313
+00:12:41.144 --> 00:12:44.549
+Or you can just move on to the next one right now.
+
+314
+00:12:44.549 --> 00:12:46.716
+Anyway, see you next time.
+
