@@ -1,0 +1,66 @@
+﻿WEBVTT
+
+1
+00:00:02.282 --> 00:00:05.937
+<v ->Hello, and welcome to the first section of the course.</v>
+
+2
+00:00:05.937 --> 00:00:08.539
+Are you excited to finally get started?
+
+3
+00:00:08.539 --> 00:00:10.645
+That's great because in this section,
+
+4
+00:00:10.645 --> 00:00:13.013
+we're gonna start building our first project
+
+5
+00:00:13.013 --> 00:00:16.521
+with HTML and some pretty advanced CSS.
+
+6
+00:00:16.521 --> 00:00:18.557
+We're not gonna dive into Sass just yet
+
+7
+00:00:18.557 --> 00:00:20.983
+because that requires some more preparation.
+
+8
+00:00:20.983 --> 00:00:22.205
+But don't worry.
+
+9
+00:00:22.205 --> 00:00:25.221
+We're gonna start coding Sass a bit later, of course.
+
+10
+00:00:25.221 --> 00:00:28.718
+So we'll start with setting up our project now,
+
+11
+00:00:28.718 --> 00:00:30.478
+but then we go straight into some modern,
+
+12
+00:00:30.478 --> 00:00:33.453
+exciting CSS features that will bring your websites
+
+13
+00:00:33.453 --> 00:00:35.340
+to a whole new level.
+
+14
+00:00:35.340 --> 00:00:37.091
+So let's now move on together
+
+15
+00:00:37.091 --> 00:00:39.418
+to start working on this first project.
+
+16
+00:00:39.418 --> 00:00:42.085
+(uptempo music)
+

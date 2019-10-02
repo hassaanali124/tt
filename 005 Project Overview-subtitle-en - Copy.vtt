@@ -1,0 +1,494 @@
+﻿WEBVTT
+
+1
+00:00:01.442 --> 00:00:03.898
+<v Narrator>In this lecture, I just wanna quickly show you</v>
+
+2
+00:00:03.898 --> 00:00:05.495
+the project that we're gonna build
+
+3
+00:00:05.495 --> 00:00:07.352
+over the next couple of sections, and also show you
+
+4
+00:00:07.352 --> 00:00:11.102
+the starter files and assets for the project.
+
+5
+00:00:13.342 --> 00:00:16.350
+So, and here it is, this is the project we're gonna build,
+
+6
+00:00:16.350 --> 00:00:18.103
+and it's called Natours.
+
+7
+00:00:18.103 --> 00:00:20.656
+And it's a website, unlike a landing page,
+
+8
+00:00:20.656 --> 00:00:24.261
+for a fictional company that offers tours in the nature,
+
+9
+00:00:24.261 --> 00:00:25.261
+so Na-tours.
+
+10
+00:00:26.102 --> 00:00:27.780
+And I designed and built this project
+
+11
+00:00:27.780 --> 00:00:30.722
+exclusively just for this course.
+
+12
+00:00:30.722 --> 00:00:33.491
+So let's take a look at the webpage.
+
+13
+00:00:33.491 --> 00:00:35.808
+So it has all this modern eloquent feel
+
+14
+00:00:35.808 --> 00:00:37.096
+that you can see here.
+
+15
+00:00:37.096 --> 00:00:40.263
+It has these nice animations, alright?
+
+16
+00:00:41.109 --> 00:00:44.176
+So here we have like some features of the company,
+
+17
+00:00:44.176 --> 00:00:46.071
+so for these tours that they offer,
+
+18
+00:00:46.071 --> 00:00:49.162
+and here you also have these nice animations.
+
+19
+00:00:49.162 --> 00:00:52.765
+And down here, and this is I think the coolest part,
+
+20
+00:00:52.765 --> 00:00:54.851
+so we have this animated card, so you see,
+
+21
+00:00:54.851 --> 00:00:58.227
+when you hover these cards, then they turn like this,
+
+22
+00:00:58.227 --> 00:01:01.370
+then you have this nice button here that you can click.
+
+23
+00:01:01.370 --> 00:01:04.394
+So a really cool effect, and you're gonna learn all of this
+
+24
+00:01:04.394 --> 00:01:07.320
+with the most modern CSS techniques.
+
+25
+00:01:07.320 --> 00:01:08.921
+And what's also really cool is
+
+26
+00:01:08.921 --> 00:01:11.889
+as soon as you hit this button here, you see what happens?
+
+27
+00:01:11.889 --> 00:01:15.964
+It opens like this pop-up, and again this is pure CSS,
+
+28
+00:01:15.964 --> 00:01:19.128
+no JavaScript needed for all of this.
+
+29
+00:01:19.128 --> 00:01:20.310
+And we can nicely close it,
+
+30
+00:01:20.310 --> 00:01:24.553
+and then it has this effect where it fades out.
+
+31
+00:01:24.553 --> 00:01:26.627
+And then down here we have the next section,
+
+32
+00:01:26.627 --> 00:01:28.660
+which is like for reviews.
+
+33
+00:01:28.660 --> 00:01:32.299
+And you see that it actually has this video here
+
+34
+00:01:32.299 --> 00:01:34.430
+going on in the background.
+
+35
+00:01:34.430 --> 00:01:36.866
+So people in my HTML and CSS course,
+
+36
+00:01:36.866 --> 00:01:38.491
+they were asking me all the time,
+
+37
+00:01:38.491 --> 00:01:40.583
+how do I do a background video?
+
+38
+00:01:40.583 --> 00:01:43.287
+And so now in this course, it's finally here.
+
+39
+00:01:43.287 --> 00:01:46.934
+So we have a whole section with these cool effects
+
+40
+00:01:46.934 --> 00:01:51.923
+here again, and also this nice background video going on.
+
+41
+00:01:51.923 --> 00:01:54.556
+And then finally in the end, we have this forum,
+
+42
+00:01:54.556 --> 00:01:58.172
+which also has this nice, modern look and feel,
+
+43
+00:01:58.172 --> 00:01:59.629
+and it does some great features
+
+44
+00:01:59.629 --> 00:02:02.108
+that I will show you as well.
+
+45
+00:02:02.108 --> 00:02:05.009
+So for example, when you start filling out this field,
+
+46
+00:02:05.009 --> 00:02:08.794
+then the full name text here, it just slides down you see?
+
+47
+00:02:08.794 --> 00:02:09.677
+You saw that?
+
+48
+00:02:09.677 --> 00:02:11.048
+So the full name went down,
+
+49
+00:02:11.048 --> 00:02:13.729
+and now when I delete it, it goes back.
+
+50
+00:02:13.729 --> 00:02:17.480
+So it's really cool. Once again, this is CSS only.
+
+51
+00:02:17.480 --> 00:02:19.500
+Then there's radio buttons here,
+
+52
+00:02:19.500 --> 00:02:22.791
+not these default radio buttons that you see everywhere.
+
+53
+00:02:22.791 --> 00:02:25.008
+These are custom-made designed radio buttons
+
+54
+00:02:25.008 --> 00:02:27.017
+just for this project.
+
+55
+00:02:27.017 --> 00:02:30.302
+And then at the end, it's just a simple footer here.
+
+56
+00:02:30.302 --> 00:02:33.621
+So this is the webpage that we're gonna build.
+
+57
+00:02:33.621 --> 00:02:36.931
+And I spent a lot of time designing this
+
+58
+00:02:36.931 --> 00:02:39.629
+to make it a really exciting project for you.
+
+59
+00:02:39.629 --> 00:02:42.578
+And I believe it's a real cool project
+
+60
+00:02:42.578 --> 00:02:46.165
+in order to learn and use tons of these new features
+
+61
+00:02:46.165 --> 00:02:49.527
+for CSS that I have for you in this course.
+
+62
+00:02:49.527 --> 00:02:53.029
+Oh, and I almost forgot the navigation here.
+
+63
+00:02:53.029 --> 00:02:55.125
+So of course a website also has a navigation,
+
+64
+00:02:55.125 --> 00:02:56.912
+maybe you saw that it stays here all the time
+
+65
+00:02:56.912 --> 00:02:58.045
+when we scroll.
+
+66
+00:02:58.045 --> 00:03:00.187
+Okay? So this is a fixed position.
+
+67
+00:03:00.187 --> 00:03:03.548
+And as soon as we hit it, it has this nice animation
+
+68
+00:03:03.548 --> 00:03:05.823
+and then when we hover the items,
+
+69
+00:03:05.823 --> 00:03:08.308
+it actually has this animation effect as well.
+
+70
+00:03:08.308 --> 00:03:11.035
+So you see there's lots of animation effects going on,
+
+71
+00:03:11.035 --> 00:03:14.320
+a lot of cool design elements, and yeah,
+
+72
+00:03:14.320 --> 00:03:17.236
+that's what I wanted to do with this project.
+
+73
+00:03:17.236 --> 00:03:19.471
+Of course, if we hit this button again,
+
+74
+00:03:19.471 --> 00:03:21.890
+then it closes the navigation,
+
+75
+00:03:21.890 --> 00:03:23.958
+and you also see this nice effect going on
+
+76
+00:03:23.958 --> 00:03:25.334
+with the opening and closing.
+
+77
+00:03:25.334 --> 00:03:26.646
+So we're gonna do all of that
+
+78
+00:03:26.646 --> 00:03:28.583
+over the next couple of sections.
+
+79
+00:03:28.583 --> 00:03:30.837
+Now, about the starter files,
+
+80
+00:03:30.837 --> 00:03:32.782
+I hope that you already downloaded them.
+
+81
+00:03:32.782 --> 00:03:35.324
+But if you didn't, then just follow the instructions
+
+82
+00:03:35.324 --> 00:03:38.035
+that I gave you in the first section of the course.
+
+83
+00:03:38.035 --> 00:03:40.587
+So anyway, I already have the starter files here
+
+84
+00:03:40.587 --> 00:03:44.252
+on my desktop as usual, so it's this folder.
+
+85
+00:03:44.252 --> 00:03:47.103
+It has just a simple HTML file in there,
+
+86
+00:03:47.103 --> 00:03:48.756
+and all images.
+
+87
+00:03:48.756 --> 00:03:51.671
+So the images that we're gonna use for the page,
+
+88
+00:03:51.671 --> 00:03:53.840
+and also the background video of course
+
+89
+00:03:53.840 --> 00:03:57.441
+that I showed you before, and all these background images,
+
+90
+00:03:57.441 --> 00:04:02.316
+and logos and the hero image for the first section,
+
+91
+00:04:02.316 --> 00:04:06.233
+and then just a small starter CSS file as well.
+
+92
+00:04:07.535 --> 00:04:10.414
+So let me just quickly fire up my text editor here,
+
+93
+00:04:10.414 --> 00:04:14.581
+which is in my case, as I mentioned, Visual Code Studio.
+
+94
+00:04:15.448 --> 00:04:18.209
+So again, you can use any editor that you want,
+
+95
+00:04:18.209 --> 00:04:20.475
+no matter if it's Atom, Brackets, Sublime
+
+96
+00:04:20.475 --> 00:04:23.773
+or whatever you're using, you can continue using that.
+
+97
+00:04:23.773 --> 00:04:26.210
+The editor that you choose is not important
+
+98
+00:04:26.210 --> 00:04:28.764
+for the final result, okay?
+
+99
+00:04:28.764 --> 00:04:32.787
+So what I want you to do now is just open the project folder
+
+100
+00:04:32.787 --> 00:04:36.954
+like this so that we can take a look at our files.
+
+101
+00:04:39.120 --> 00:04:41.049
+So, closing the welcome screen.
+
+102
+00:04:41.049 --> 00:04:43.416
+And so that's our HTML file.
+
+103
+00:04:43.416 --> 00:04:45.784
+It's just a simple barebone structure
+
+104
+00:04:45.784 --> 00:04:49.168
+where we can start adding stuff to our body.
+
+105
+00:04:49.168 --> 00:04:52.200
+So you see I already included the style CSS here.
+
+106
+00:04:52.200 --> 00:04:55.585
+I already gave it a title and a favicon,
+
+107
+00:04:55.585 --> 00:04:58.463
+and I also already included the Lato font,
+
+108
+00:04:58.463 --> 00:05:00.194
+so the Google web font.
+
+109
+00:05:00.194 --> 00:05:01.929
+Because I'm assuming here
+
+110
+00:05:01.929 --> 00:05:03.539
+that you are already familiar with this stuff,
+
+111
+00:05:03.539 --> 00:05:05.830
+and so it would be pretty boring for you to watch me
+
+112
+00:05:05.830 --> 00:05:07.388
+type out this code.
+
+113
+00:05:07.388 --> 00:05:11.600
+So that's the starter HTML, then we have our images again,
+
+114
+00:05:11.600 --> 00:05:14.221
+and the CSS is actually empty.
+
+115
+00:05:14.221 --> 00:05:16.001
+All we have is this comment here
+
+116
+00:05:16.001 --> 00:05:19.300
+where I put the three green colors
+
+117
+00:05:19.300 --> 00:05:22.359
+that we used for the branding of the webpage, okay?
+
+118
+00:05:22.359 --> 00:05:25.372
+So these are the three greens that we're gonna use.
+
+119
+00:05:25.372 --> 00:05:27.186
+So I think that's it for this video.
+
+120
+00:05:27.186 --> 00:05:30.141
+So we saw the project. We saw the starter files.
+
+121
+00:05:30.141 --> 00:05:32.813
+We have everything opened up in our code editor,
+
+122
+00:05:32.813 --> 00:05:34.926
+and so we're ready to go.
+
+123
+00:05:34.926 --> 00:05:39.093
+So let's start coding in a second in the next video.
+
